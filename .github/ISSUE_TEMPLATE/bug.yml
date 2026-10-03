@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report a reproducible bug or unexpected behavior.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+
+        Please search existing issues before submitting a new one.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clearly describe what happened.
+      placeholder: |
+        What happened?
+        What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest set of steps needed to reproduce the issue.
+      placeholder: |
+        1. Start Minecraft with...
+        2. Create/open a world...
+        3. Use...
+        4. The game...
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: "1.21.x"
+    validations:
+      required: true
+
+  - type: input
+    id: neoforge-version
+    attributes:
+      label: NeoForge version
+      placeholder: "21.x.x"
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Client
+        - Dedicated Server
+        - Client and Dedicated Server
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Crash Report
+      description: |
+        Please attach the relevant log or crash report.
+        Do not paste huge logs directly into the issue if an attachment is possible.
+      placeholder: |
+        Paste a relevant excerpt here or drag the file into the issue.
+      render: text
+
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: List other installed mods, especially ones that may be related.
+      placeholder: |
+        Mod A - version
+        Mod B - version
+        Mod C - version
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Anything else that could help reproduce or diagnose the issue.
+
+  - type: checkboxes
+    id: duplicates
+    attributes:
+      label: I have checked that no other issue exist
+      description: There is not an already existing issue for this problem
+      options:
+        - label: Yes
+          required: true
