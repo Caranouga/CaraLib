@@ -1,0 +1,52 @@
+name: Feature Request
+description: Suggest a new feature or improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement!
+
+        Please search existing issues first to avoid duplicates.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem would this feature solve?
+      placeholder: |
+        I would like to...
+        Currently, it is difficult/impossible to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like the mod to do.
+      placeholder: |
+        Add...
+        Change...
+        Allow...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternative solutions or workarounds you considered.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples / references
+      description: Add examples, screenshots, videos, or links if relevant.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information

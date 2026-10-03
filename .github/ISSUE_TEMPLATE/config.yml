@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/Caranouga/CaraLib/discussions
+    about: Ask questions or discuss ideas that are not bug reports or feature requests.
